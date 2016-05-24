@@ -81,6 +81,10 @@ public class SynthGraphic extends Applet
       page.fillRect (MID-426, 229, 52, 52);        //volume down around
       page.setColor (Color.white);
       page.fillRect (MID-425, 230, 50, 50);        //volume down
+      
+      page.setColor (Color.black);
+      page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {200, 180, 200}, 3); //vol triangle up
+      page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {250, 270, 250}, 3); //vol triangle down
 
       //octave buttons
       
@@ -95,6 +99,12 @@ public class SynthGraphic extends Applet
       page.fillRect (MID-426, 379, 52, 52);        //octave down around
       page.setColor (Color.white);
       page.fillRect (MID-425, 380, 50, 50);        //octave down
+      
+      page.setColor (Color.black);
+      page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {350, 330, 350}, 3); //octave triangle up
+      page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {400, 420, 400}, 3); //vol triangle down
+
+
 
    }
 }
