@@ -7,7 +7,7 @@ import javax.swing.JFrame;
  * Main.java
  * This is the main class. It controls all other classes and creates the window
  * 
- * @author Daniel Andrejczyk, Tom Lebert, Michael Lungo
+ * @author Daniel Andrejczyk, Tom Lebert
  * @version 5/20/16 <- UPDATE THIS!!!
  */
 
