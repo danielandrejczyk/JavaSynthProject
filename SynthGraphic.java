@@ -4,7 +4,7 @@ import java.awt.*;
 public class SynthGraphic extends Applet
 {
    //-----------------------------------------------------------------
-   //  Draws a synthesizer.
+   //  Draws a synthesizer...
    //-----------------------------------------------------------------
    public void paint (Graphics page)
    {
