@@ -2,6 +2,7 @@ import java.awt.Canvas;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /*
  * Main.java
@@ -18,13 +19,16 @@ public class Main extends Canvas {
 	public static final int SCREEN_HEIGHT = 500;
 	
 	public JFrame frame;
+	public static JPanel panel;
+	public static Screen screen;
 	
 	public Main(){
 		Dimension size = new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT);
 		setPreferredSize(size);
 		
 		frame = new JFrame(gameTitle); //Creates a new JFrame object and sets the title
-	
+		panel = new JPanel();
+		screen = new Screen();
 	}
 
 	public static void main(String args[]){
@@ -36,7 +40,7 @@ public class Main extends Canvas {
 		main.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		main.frame.setLocationRelativeTo(null);
 		main.frame.setVisible(true);
-
+		screen.drawKeyboard();
 	}
 
 }
