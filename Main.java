@@ -20,27 +20,28 @@ public class Main extends Canvas {
 	
 	public JFrame frame;
 	public static JPanel panel;
-	public static Screen screen;
+	
+	//public synchronized static start(){
+		//running = true;
+	//}
 	
 	public Main(){
 		Dimension size = new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT);
 		setPreferredSize(size);
 		
-		frame = new JFrame(gameTitle); //Creates a new JFrame object and sets the title
-		panel = new JPanel();
-		screen = new Screen();
+		frame = new JFrame(gameTitle);
 	}
 
 	public static void main(String args[]){
 
 		Main main = new Main();
-		main.frame.setResizable(false);
+		main.frame.setResizable(true);
 		main.frame.add(main);
-		main.frame.pack();
 		main.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		main.frame.setLocationRelativeTo(null);
+		main.frame.add(new newPanel());
+		main.frame.pack();
 		main.frame.setVisible(true);
-		screen.drawKeyboard();
 	}
 
 }
