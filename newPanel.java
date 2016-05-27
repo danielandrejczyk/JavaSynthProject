@@ -115,6 +115,10 @@ public class newPanel extends JPanel {
 		page.fillRect (MID-426, 379, 52, 52);        //octave down around
 		page.setColor (Color.white);
 		page.fillRect (MID-425, 380, 50, 50);        //octave down]
+		
+		page.setColor (Color.black);
+	    page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {350, 330, 350}, 3); //octave triangle up
+	    page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {400, 420, 400}, 3); //vol triangle down
 
 	}	
 }
