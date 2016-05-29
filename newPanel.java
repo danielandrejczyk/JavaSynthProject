@@ -73,7 +73,7 @@ public class newPanel extends JPanel {
 		//black keys
 
 		page.setColor (Color.black);
-		page.fillRect (MID-225, 150, 49, 200);        //bkey 2
+		page.fillRect (MID-225, 150, 49, 200);        //bkey 1
 
 
 		page.setColor (Color.black);
