@@ -1,4 +1,3 @@
-import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -19,6 +18,7 @@ public class newPanel extends JPanel {
 	//Constructor
 	public newPanel(){
 		setBorder(BorderFactory.createLineBorder(Color.black));//might delete this later...
+		setVisible(true);
 	}
 	
 	//Set the size methinks...

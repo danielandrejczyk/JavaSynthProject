@@ -1,29 +1,29 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
+public class KeyButton {
 
-public class KeyButton extends JButton implements ActionListener{
-	
+	private int x, y, w, h;
+	private String keyNote;
 	public boolean pressed = false;
+
+	public KeyButton(int x, int y, int w, int h, String keyNote) {
+		this.x = x;
+		this.y = y;
+		this.w = w;
+		this.h = h;
+		this.keyNote = keyNote;
+	}
+
+	public boolean hovering(int x, int y){
+
+		if((x > this.x) && (x < this.w) && (y > this.y) && (y < this.h)){
+			return true;
+		}
+
+		return false;
+
+	}
 	
-	public KeyButton(int posX, int posY, int w, int h) {
-		super();
-		setBounds(posX, posY, w, h);
-		setBorder(null);
-		setBorderPainted(true);
-		setContentAreaFilled(false);
-		setOpaque(false);
-		
-		
-		setVisible(true);
-		addActionListener(this);
+	public String getKeyNote(){
+		return keyNote;
 	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		System.out.println("Button was pressed!");
-		
-	}
-
 }
