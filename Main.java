@@ -65,31 +65,24 @@ public class Main extends Canvas implements Runnable, MouseListener {
 			for(KeyButton button : keyButtons){
 				if(button.hovering(mx, my)){
 					keyNote = button.getKeyNote();
-					System.out.println(keyNote); //testing
 				}
 			}
-			/*
-			 * Checks to see what note keyNote is set to, if it finds that note,
-			 * then customize the method playNote to play the correct note in the KeyButton class.
-			 *  
-			 */
-			/*
+
 			switch(keyNote){
-			case "C":		//playNote("C");	break;
-			case "C#":		//playNote("C#");	break;
-			case "D":		//playNote("D");	break;
-			case "D#":		//playNote("D#");	break;
-			case "E":		//playNote("E");	break;
-			case "F":		//playNote("F");	break;
-			case "F#":		//playNote("F#"); break;
-			case "G":		//playNote("G");	break;
-			case "G#":		//playNote("G#"); break;
-			case "A":		//playNote("A"); break;
-			case "A#":		//playNote("A#"); break;
-			case "B":		//playNote("B"); break;
+			case "C":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\C_A2.wav");	break;
+			case "C#":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\CS_A2.wav");	break;
+			case "D":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\D_A2.wav");	break;
+			case "D#":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\DS_A2.wav");	break;
+			case "E":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\E_A2.wav");	break;
+			case "F":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\F_A2.wav");	break;
+			case "F#":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\FS_A2.wav");	break;
+			case "G":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\G_A2.wav");	break;
+			case "G#":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\GS_A2.wav");	break;
+			case "A":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\A_A2.wav");	break;
+			case "A#":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\AS_A2.wav");	break;
+			case "B":		KeyButton.playNote("C:\\Users\\Tom\\Documents\\Programming (Home)\\Final Project\\Programming Final Project\\Notes\\Octave A2\\B_A2.wav");	break;
 			default:	break;	//do nothing
 			}
-			*/
 		}
 	}
 
@@ -144,13 +137,13 @@ public class Main extends Canvas implements Runnable, MouseListener {
 		//Black Keys 1-5
 		KeyButton bk1 = new KeyButton(MID-225, 150, 49, 200, "C#");
 		keyButtons.add(bk1);
-		KeyButton bk2 = new KeyButton(MID-225, 150, 49, 200, "D#");
+		KeyButton bk2 = new KeyButton(MID-125, 150, 49, 200, "D#");
 		keyButtons.add(bk2);
-		KeyButton bk3 = new KeyButton(MID-225, 150, 49, 200, "F#");
+		KeyButton bk3 = new KeyButton(MID+75, 150, 49, 200, "F#");
 		keyButtons.add(bk3);
-		KeyButton bk4 = new KeyButton(MID-225, 150, 49, 200, "G#");
+		KeyButton bk4 = new KeyButton(MID+175, 150, 49, 200, "G#");
 		keyButtons.add(bk4);
-		KeyButton bk5 = new KeyButton(MID-225, 150, 49, 200, "A#");
+		KeyButton bk5 = new KeyButton(MID+275, 150, 49, 200, "A#");
 		keyButtons.add(bk5);
 		
 	}

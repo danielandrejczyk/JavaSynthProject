@@ -88,37 +88,7 @@ public class newPanel extends JPanel {
 		page.setColor (Color.black);
 		page.fillRect (MID+275, 150, 49, 200);        //bkey 5
 
-		//volume buttons
-
-		page.setColor (Color.black);
-		page.drawString ("VOLUME", MID-425, 160); //volume label
-
-		page.setColor (Color.black);
-		page.fillRect (MID-426, 169, 52, 52);        //volume up around
-		page.setColor (Color.white);
-		page.fillRect (MID-425, 170, 50, 50);        //volume up
-		page.setColor (Color.black);
-		page.fillRect (MID-426, 229, 52, 52);        //volume down around
-		page.setColor (Color.white);
-		page.fillRect (MID-425, 230, 50, 50);        //volume down
-
-		//octave buttons
-
-		page.setColor (Color.black);
-		page.drawString ("OCTAVE", MID-425, 310); //octave label
-
-		page.setColor (Color.black);
-		page.fillRect (MID-426, 319, 52, 52);        //octave up around
-		page.setColor (Color.white);
-		page.fillRect (MID-425, 320, 50, 50);        //octave up
-		page.setColor (Color.black);
-		page.fillRect (MID-426, 379, 52, 52);        //octave down around
-		page.setColor (Color.white);
-		page.fillRect (MID-425, 380, 50, 50);        //octave down]
 		
-		page.setColor (Color.black);
-	    page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {350, 330, 350}, 3); //octave triangle up
-	    page.fillPolygon(new int[] {MID-420, MID-400, MID-380}, new int[] {400, 420, 400}, 3); //vol triangle down
 
 	}	
 }
