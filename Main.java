@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/*
+/**
  * Main.java
  * This is the main class. It controls all other classes and creates the window
  * 
@@ -64,7 +64,6 @@ public class Main extends Canvas implements Runnable, MouseListener {
 			String keyNote = "";
 			for(KeyButton button : keyButtons){
 				if(button.hovering(mx, my)){
-					System.out.println("got here");
 					keyNote = button.getKeyNote();
 					System.out.println(keyNote); //testing
 				}

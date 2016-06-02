@@ -14,8 +14,11 @@ public class KeyButton {
 	}
 
 	public boolean hovering(int x, int y){
+		
+		//System.out.println(this.x + ", " + this.y + ", " + w + ", " + h);
+		//System.out.println(x + ", " + y);
 
-		if((x > this.x) && (x < this.w) && (y > this.y) && (y < this.h)){
+		if((x > this.x) && (x < this.w + this.x) && (y > this.y) && (y < this.h + this.y)){
 			return true;
 		}
 
