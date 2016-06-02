@@ -36,7 +36,7 @@ public class newPanel extends JPanel {
 		super.paintComponent(page);
 		
 		final int MID = Main.SCREEN_WIDTH /2 + 20;
-		page.fillRect(0, 0, Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT); 
+		//page.fillRect(0, 0, Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT); 
 
 		page.setColor (Color.black);
 		page.fillRect (MID-501, 99, 1002, 502);  //back
